@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TechTreeAPI.Main.GeneralRepository\TechTreeAPI.Main.Data.csproj" />
+    <ProjectReference Include="..\TechTreeAPI.Main.IData\TechTreeAPI.Main.IData.csproj" />
+    <ProjectReference Include="..\TechTreeAPI.SqlServe\TechTreeAPI.SqlServe.csproj" />
+  </ItemGroup>
+
+
+</Project>
